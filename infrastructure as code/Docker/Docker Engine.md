@@ -1,0 +1,10 @@
+- Linux 호스트에 Docker를 설치하면 컴포넌트 3개가 설치된다.
+    - Docker CLI
+        - 명령줄로 컨테이너 실행, 중지 및 이미지 제거 등에 사용
+    - REST API
+        - 프로그램이 쓰는 API 인터페이스로 Daemon과 통신하고 명령어를 제공할 때 사용
+    - Docker Deamon
+        - Docker 객체인 이미지와 컨테이너 볼륨 및 네트워크를 관리하는 백그라운드 프로세스
+- 첨부한 링크에 Runtime options들에 대해 자세하게 볼 수있다.
+    
+    [https://docs.docker.com/config/containers/resource_constraints/](https://docs.docker.com/config/containers/resource_constraints/)

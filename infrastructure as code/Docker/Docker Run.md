@@ -1,0 +1,43 @@
+### Run - tag
+
+---
+
+- docker run을 실행할 때 실행할 이미지 뒤에 tag를 붙히지 않을 경우 **자동으로 latest로 간주**
+    - docker run redis
+- 원하는 버전으로 이미지를 실행하고 싶을 경우 뒤에 tag를 붙혀서 실행
+    - docker run redis:4.0
+
+### Run - PORT mapping
+
+---
+
+- docker run을 실행할 때는 호스트 포트와 docker container 포트를 같이 입력
+    - docker run -p 80:5000 kodekloud/simple-webapp
+    - docker run -p 8000:5000 kodekloud/simple-webapp
+    - docker run -p 8091:5000 kodekloud/simple-webapp
+- 만약 container 포트만 입력했을 경우 외부 사용자는 container에 들어오기 위해 호스트에 접속 후 해당 container 포트를 재 입력.
+
+### RUN - Volume mapping
+
+---
+
+- MySQL 컨테이너를 삭제하고 제거하게 되면 그 내부에 있는 데이터들은 모두 삭제됨
+- 컨테이너가 삭제가 되어도 데이터를 유지하려면 **외부 디렉터리를 컨테이너 내부 디렉터리에 매핑해야함.**
+    - docker run -v **/opt/datadir**:**/var/lib/mysql** mysql
+    - **/opt/datadir** ⇒ 외부 디렉토리 경로
+    - **/var/lib/mysql** ⇒ 내부 컨테이너 디렉토리 경로
+
+### Inspect Container
+
+---
+
+- 특정 컨테이너의 추가적인 세부정보를 보려면 **docker inspect** 사용
+    - 상태, 마운트, 구성 데이터, 네트워크 설정 등등
+    - docker inspect [container name or ID]
+
+### Container Logs
+
+---
+
+- 컨테이너에서 실행된 로그를 보려면 **docker logs** 사용
+    - docker logs [container name or ID]
