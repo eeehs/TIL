@@ -101,8 +101,5 @@ SG는 서버 단위 방화벽, NACL은 서브넷 단위 방화벽이라 하여 �
 - 하나의 서브넷은 하나의 NACL만 연동 가능
     - 단, 하나의 NACL은 여러 서브넷 연동 가능
 
-정리한 글 읽어주신 분들께 모두 감사드립니다. 
-
-부족하기에 틀린 부분이 있으면 말씀 부탁드립니다. 
 
 참조: [https://www.youtube.com/watch?v=0hXYfi55_Ww](https://www.youtube.com/watch?v=0hXYfi55_Ww)
