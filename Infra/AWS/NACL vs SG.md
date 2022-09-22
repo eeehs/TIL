@@ -28,9 +28,8 @@
 
 SG는 서버 단위 방화벽, NACL은 서브넷 단위 방화벽이라 하여 구성되어 있는 아키텍쳐로 보면 이해가 쉬울 것 같아서 아키텍쳐 그림을 가져와봤다.
 
-![111.PNG](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/256946f5-1429-4cbf-a5d7-f6c3c9959e32/111.png)
+![111 PNG (1)](https://user-images.githubusercontent.com/107851776/191700590-d948ba26-8f60-4934-b253-03bcb0584f98.png)
 
-[https://willseungh0.tistory.com/109](https://willseungh0.tistory.com/109)
 
 구성된 아키텍쳐를 보면서 글을 읽으니 이해 상대적으로 수월했다. 이 글을 보는 여러분도 그러길.. 
 
