@@ -9,7 +9,7 @@
 # 분류
 
 
-## python
+## Language
 - [기본문법](https://github.com/eeehs/TIL/tree/main/Python/%EA%B8%B0%EB%B3%B8%20%EB%AC%B8%EB%B2%95)
 ## Infra(OS/Server/Cloud/Network)
 - [AWS](https://github.com/eeehs/TIL/tree/main/Infra/AWS)
