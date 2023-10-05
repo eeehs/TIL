@@ -10,7 +10,7 @@
 - 총 4가지 종류 ELB
     - **Application Load Balancer**
         
-        ![Alt text](../../Image/elb1.png)
+        ![Alt text](Image/elb1.png)
         
         - 똑똑한 녀석 **(OSI 7 Layer)**
         - 트래픽을 모니터링하여 라우팅 가능
@@ -21,7 +21,7 @@
         - ALB는 IP 주소가 변동되기 때문에 Client에서 Access 할 ELB의 **DNS Name을 이용**
     - **Network Load Balancer**
         
-        ![Alt text](../../Image/elb2.png)
+        ![Alt text](Image/elb2.png)
         
         - 빠른 녀석
         - **4계층에 해당하는 Transport Layer를 다루는 로드밸런서**
@@ -33,7 +33,7 @@
         - NLB는 **SSL 적용이 인프라 단에서 불가능**하여 애플리케이션에서 따로 적용해 주어야 합니다
     - **Classic Load Balancer**
         
-        ![Alt text](../../Image/elb3.png)
+        ![Alt text](Image/elb3.png)
         
         - 옛날 녀석
         - 예전에 사용되던 타입으로 현재는 잘 사용되지 않음
@@ -41,7 +41,7 @@
             - ex) 쿠팡에서 회원관리(shop) 인스턴스와 주문(order) 인스턴스가 따로 존재한다고 하자. 로그인 후 주문을 하기 위해서는 그림 처럼 각각 다른 Load Balancer를 거쳐 해당 인스턴스로 접속해야하므로 서버 개수, 비용이 증가하게 된다.
     - **Gateway Load Balancer**
         
-        ![Alt text](../../Image/elb4.png)
+        ![Alt text](Image/elb4.png)
         
         - 먼저 **트래픽을 체크**하는 녀석
         - 방화벽, 침입 탐지 및 방지 시스템, 심층 패킷 검사 시스템과 같은 가상 어플라이언스 배포/확장 관리를 위한 서비스
@@ -50,7 +50,7 @@
 ## ****ELB 리스너/Rule/대상그룹****
 
 
-![Alt text](../../Image/elb5.png)
+![Alt text](Image/elb5.png)
 
 - ELB는 VPC에 탑재되며, 사용자의 요청을 받고 이를 VPC내의 리소스에 적절히 부하 분산한다.
 - ELB는 외부의 요청을 받아들이는 **리스너(Listener)**와 요청을 분산/전달할 리소스의 집합인 **대상 그룹(Target Group)**으로 구성되며 다수의 리스너와 대상그룹을 거느릴 수 있다.
@@ -62,7 +62,7 @@
 ### ****리스너(Listener)****
 
 
-![Alt text](../../Image/elb6.png)
+![Alt text](Image/elb6.png)
 
 - 리스너는 프로토콜과 포트를 기반으로 요청을 받아 검사하고 이를 적절한 타겟으로 전달하는 기능을 수행한다. 그래서 이름에 'Listen' 이 붙는 것이다.
 - 모든 로드 밸런서는 최소 1개 이상의 리스너를 필요로 하며, 최대 10개까지 설정할 수 있다.
@@ -78,7 +78,7 @@
 ### 대상그룹(Target Group)
 
 
-![Alt text](../../Image/elb7.png)
+![Alt text](Image/elb7.png)
 
 - **ALB가 라우팅 할 대상의 집합**
 - 리스너가 전달한 요청을 처리하기 위한 **부하분산 대상들의 모임**
@@ -96,7 +96,7 @@
 ### ****유휴 제한 시간(Connection Time out)****
 
 
-![Alt text](../../Image/elb8.png)
+![Alt text](Image/elb8.png)
 
 - 사용자가 ELB를 거쳐 EC2에 접근하여 서비스를 접속하면 Connection이 생성된다.
 - 유휴 제한 시간이란, **일정 시간동안 통신이 없을 때 커넥션을 삭제할 것인가**를 뜻한다.

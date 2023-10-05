@@ -5,7 +5,7 @@
 [NACL(Network Access Control List)](#naclnetwork-access-control-list-1)
 
 
-![Alt text](../../Image/NACL_vs_SG.PNG.png)
+![Alt text](Image/NACL_vs_SG.PNG.png)
 
 **AWS**는 네트워크 통신 및 트래픽에 대해 IP, Port 기준으로 허용/차단하기 위해 SG(Security Group)와 NACL(Network Access Control List) 서비스를 제공합니다. 
 
@@ -37,7 +37,7 @@
 
 **SG**는 인스턴스 단위 방화벽, **NACL**은 서브넷 단위 방화벽이라 하여 구성되어 있는 아키텍쳐로 보면 이해가 쉬울 것 같아서 아키텍쳐 그림을 가져와봤습니다.
 
-![Alt text](../../Image/NACL_vs_SG.PNG2.png)
+![Alt text](Image/NACL_vs_SG.PNG2.png)
 
 구성된 아키텍쳐를 보면서 글을 읽으니 이해 상대적으로 수월합니다..
 
