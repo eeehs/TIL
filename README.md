@@ -8,4 +8,5 @@
 ## 목록
 
 - Infra
+    - [AWS](https://github.com/eeehs/TIL/tree/main/Infra/AWS)
     - [Network](https://github.com/eeehs/TIL/tree/main/Infra/Network)
